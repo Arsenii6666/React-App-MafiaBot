@@ -56,7 +56,6 @@ $color-form-highlight: #EEEEEE;
 	display:inline-block;
 	padding-left:$base-spacing-unit;
 	padding-right:$base-spacing-unit;
-	
 	&::after {
 		content:'';
 		position:absolute;
@@ -66,11 +65,9 @@ $color-form-highlight: #EEEEEE;
 		top: 50%;
 		transform: translateY(-50%);
 	}
-	
 	&.desc::after {
 		content: '(desc)';
 	}
-
 	&.asc::after {
 		content: '(asc)';
 	}
