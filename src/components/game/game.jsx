@@ -98,10 +98,9 @@ export const Game = ({ className }: GameProps) => {
     };
     
     const addName = (name: string, index: number) => {
-        console.log(name);
-        const updatedPlayerNames = [...playerNames]; // Create a copy of the array
-        updatedPlayerNames[index-1] = name; // Modify the copy
-        setPlayerNames(updatedPlayerNames); // Update the state variable
+        const updatedPlayerNames = [...playerNames];
+        updatedPlayerNames[index-1] = name;
+        setPlayerNames(updatedPlayerNames);
         if (playerRoles[index-1] == "Sheriff" || playerRoles[index-1] == "Townie"){
             const updatedTownieNames = [...townieSet];
             updatedTownieNames.push(name);
